@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>FlumeMusic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="A mock form for the user to fill out information to buy a fake ticket. Total cost will be the amount of tickets selected * the type of ticket. Link to the ticket page will be included and a clear button will be included to reset the form. Form will have many constraints to limit duplicate user info." />
+
+  <link rel="stylesheet" href="./stylesheets/main.css" />
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/flume-logo.jpg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="tour.html">Tour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tickets.html">Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="albums.html">Albums</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="countdown">Time Remaining: <span id="timer">06:00</span></div>
+
+  <!-- HEADER -->
+  <h1 class="display-2 text-center my-5">
+    <span class="text-light">Payment</span>
+  </h1>
+
+  <!-- FORM -->
+  <div class="container">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="firstname" class="form-label">First</label>
+        <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+      </div>
+      <div class="col-md-6">
+        <label for="lastname" class="form-label">Last</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Lastname">
+      </div>
+      <div class="col-12">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <div class="col-12">
+        <label for="paymentinfo" class="form-label">Payment Information</label>
+        <input type="password" class="form-control" id="paymentinfo" placeholder="Payment Information">
+      </div>
+
+      <div class="col-md-6">
+        <label for="ticketoption" class="form-label">Ticket Options</label>
+        <select id="ticketoption" class="form-select">
+          <option value="65">General Admission - $65.00</option>
+          <option value="299">Pit - $299.00</option>
+          <option value="6500">Premuim Package - $6,500.00</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="location" class="form-label">Location</label>
+        <select id="location" class="form-select">
+          <option>Sat Nov 25 - Odgen, Utah</option>
+          <option>Sun Nov 26 - Salt Lake City, Utah</option>
+          <option>Fri Dec 1 - Morrison, Colorado</option>
+          <option>Sat Dec 2 - Santa Barbara, California</option>
+          <option>Sun Dec 3 - Santa Ynez, California</option>
+          <option>Mon Dec 4 - San Luis Obispo, California</option>
+        </select>
+      </div>
+
+      <div class="col-md-6 g-5">
+        <label for="number" class="form-label">Qty</label>
+        <select name="number" id="number">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="col-md-6 g-5">
+        <h5>Total</h5>
+        <div id="total">$65</div>
+      </div>
+      <div class="col-4">
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+      </div>
+      <div class="col-4">
+        <button type="reset" class="btn btn-danger" id="cancel">Clear</button>
+      </div>
+      <div class="col-4">
+        <a href="tickets.html" class="btn btn-secondary">Ticket Details</a>
+      </div>
+    </form>
+  </div>
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+
+</html>

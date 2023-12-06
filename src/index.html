@@ -1,27 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Project Starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="TODO: A starter project for ..." />
 
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>FlumeMusic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description"
+    content="Mock music artist website. For this project I am using Flume as an artist. A link to flumes official page is at the bottom aswell as a wiki page about him for more information" />
 
-  <body>
-    <!-- Your HTML goes here -->
-    <h1 class="display-2 text-center my-5 py-5">
-      <span class="d-block py-5">
-        <i class="bi bi-filetype-html text-primary"></i>
-        <i class="bi bi-filetype-css text-danger"></i>
-        <i class="bi bi-filetype-js text-success"></i>
-      </span>
+  <link rel="stylesheet" href="./stylesheets/main.css" />
+</head>
 
-      Welcome to CS 2350!
-    </h1>
+<body class="bg-dark">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg"
+    style="background-image: url(images/flume-skin-album-art-2016-billboard-1548-compressed.jpg);">
+    <div class="container-fluid p-xl-5">
+      <a class="navbar-brand" href="index.html">
+        <img class="brand" src="images/flume.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-3 mb-lg-0 fs-4 display-2 fw-bold">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="tour.html">Tour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tickets.html">Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="albums.html">Albums</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <script type="module" src="./javascripts/main.js"></script>
-  </body>
+  <!-- Homepage_BOXES -->
+  <!-- Tour -->
+  <div class="cards row row-cols-1 row-cols-md-2 g-3 g-lg-4 p-1 p-lg-4">
+    <div class="col">
+      <a class="nav-link" href="tour.html">
+        <div class="card bg-dark">
+          <div class="card-body" style="background-image: url(images/weekend.jpg); background-position: 1px 1px;">
+            <h3 class="card-title">2023 Tour</h3>
+            <p class="card-text">Flume's 2023 tour is coming to an end. Tickets are still availible! Get them now before
+              time runs out.
+            </p>
+            <img class="home" src="images/concertbeast.jpg" alt="">
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Tickets -->
+    <div class="col">
+      <a class="nav-link" href="tickets.html">
+        <div class="card bg-dark">
+          <div class="card-body" style="background-image: url(images/green.jpg); background-position: -500px -300px;">
+            <h3 class="card-title">Tickets</h3>
+            <p class="card-text">See details on ticket price, bundles, and upcoming deals for Flume's 2023 tour.
+            </p>
+            <img class="home" src="images/flumepic.jpg" alt="">
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Albums -->
+    <div class="col">
+      <a class="nav-link" href="albums.html">
+        <div class="card bg-dark">
+          <div class="card-body"
+            style="background-image: url(images/flume-skin-album-art-2016-billboard-1548-compressed.jpg); background-position: 1px;">
+            <h3 class="card-title">Albums</h3>
+            <p class="card-text">Palaces out now! <br>Flumes albums plus more information here.</p>
+            <img class="home" src="images/tour2.jpg" alt="">
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Form/BUYtickets -->
+    <div class="col">
+      <a class="nav-link" href="form.html">
+        <div class="card bg-dark">
+          <div class="card-body" style="background-image: url(images/difference.jpg); background-position: 1px;">
+            <h3 class="card-title">Purchase Tickets</h3>
+            <p class="card-text">Click here to purchase tickets now. <br> Personal information required.</p>
+            <img class="home" src="images/flumepic2.jpg" alt="">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="justify-content-center container">
+      <div class="row pb-3">
+        <div class="col-md-4 text-center">
+          <span><a href="https://flumemusic.com/">Flumemusic.com</a></span>
+        </div>
+        <div class="col-md-4 text-center">
+          <span><a href="https://en.wikipedia.org/wiki/Flume_(musician)">More Information</a></span>
+        </div>
+        <div class="col-md-4 text-center">
+          <span class="right">&copy; James S</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+
 </html>
